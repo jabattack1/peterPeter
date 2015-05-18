@@ -245,6 +245,24 @@ body {
     text-decoration: none;
 }
 
+#sites_boro {
+  font-family: 'Arvo', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  margin-left:50%;
+  margin-top:20%;
+  position: absolute;
+  font-size: 15px;
+}
+
+#sites_boro:hover { 
+  font-family: 'Arvo', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+    color: #FF8300;
+    text-decoration: none;
+}
+
 #sites_peter {
 	font-family: 'Arvo', Helvetica, Arial, sans-serif;
 	font-weight: bold;
