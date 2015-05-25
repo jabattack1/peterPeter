@@ -209,6 +209,24 @@ body {
     text-decoration: none;
 }
 
+#sites_solo {
+  font-family: 'Arvo', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  margin-left:5%;
+  margin-top:50%;
+  position: absolute;
+  font-size: 15px;
+}
+
+#sites_solo:hover { 
+  font-family: 'Arvo', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+    color: #FF8300;
+    text-decoration: none;
+}
+
 #sites_seafood {
   font-family: 'Arvo', Helvetica, Arial, sans-serif;
   font-weight: bold;
