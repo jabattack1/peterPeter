@@ -335,6 +335,24 @@ body {
     text-decoration: none;
 }
 
+#sites_jr {
+  font-family: 'Arvo', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  margin-left:50%;
+  margin-top:50%;
+  position: absolute;
+  font-size: 15px;
+}
+
+#sites_jr:hover { 
+  font-family: 'Arvo', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+    color: #FF8300;
+    text-decoration: none;
+}
+
 #snow{
   font-family: 'Arvo', Helvetica, Arial, sans-serif;
   font-weight: bold;
