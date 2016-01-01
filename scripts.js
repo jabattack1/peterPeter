@@ -2,6 +2,8 @@ console.log("MOTHA!");
 var content ="<div id=\"content\" class=\"content\"></div>";
 
 var say = "My name is Peter Hahn and I am a Full Stack Web Developer (JavaScript, Ruby on Rails, HTML/CSS) currently living in Seoul, South Korea (US Citizen).  I am a graduate of General Assembly (NYC campus), where I studied Ruby on Rails and JavaScript.  I feel that I am a solid candidate for your company because of my abilities as a Web Developer, my overall understanding of user experience needs, and because of my very strong work ethic. 
+<br>
+<br>
 I am proficient using JavaScript, Ruby on Rails, and HTML/CSS.  I am currently working as a Back End Developer for a New York City based company called MOI'M and as a freelance Full Stack Web Developer, which involves designing a PSQL database for most sites, a Ruby on Rails back-end server, and implementing JavaScript (HTML/CSS) front-end for user experience. 
 <br>
 <br>
