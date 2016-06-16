@@ -1,7 +1,7 @@
 console.log("MOTHA!");
 var content ="<div id=\"content\" class=\"content\"></div>";
 
-var say = "helo"
+var say = "New introduction coming soon."
 var template = "<h3 class='animated fadeIn' id='name'>Peter Hahn</h3><h2 class='animated fadeIn' id='title'>Full Stack Developer (JavaScript, Ruby, HTML/CSS)</h2>";
 var exp = "<h2 class='animated fadeIn' id='exp'>"+say+"</h2>";
 var headshot = "<img src='http://i1301.photobucket.com/albums/ag119/jabattack1/headshot_zpssoavnc6u.jpg' class='animated fadeIn' id='photo'>";
