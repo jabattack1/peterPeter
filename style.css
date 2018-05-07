@@ -157,12 +157,13 @@ body {
   font-weight: bold;
   position: absolute;
   color: black;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
 #contact_email:hover { 
   font-family: 'Arvo', Helvetica, Arial, sans-serif;
   font-weight: bold;
-    color: white;
+    color: #FF8300;
     text-decoration: none;
 }
 
