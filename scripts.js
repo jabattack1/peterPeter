@@ -12,8 +12,11 @@ var projects ="<a href=http://www.implus.club target=\"_blank\" class='animated 
 var contact ="<a href=\"mailto:peter.hahn@live.com\" class='animated fadeIn' id='contact_email'>peter.hahn@live.com</a><p class='animated fadeIn' id='contact_phone'>551-689-3517</p>"
 
 var content_tv ="<div id=\"content_tv\" class=\"content\"><script>$('#content_tv').append(tv);</script></div>";
-var tv ="<img src='https://imgur.com/Feb3jDR' id='tv'>"; 
-var snowscreen ="<img src='https://imgur.com/Feb3jDR' id='snowscreen'>";
+var tv ="<img src='https://i.imgur.com/Feb3jDR.gif' title='source: imgur.com' id='tv'>"; 
+var snowscreen ="<img src='https://i.imgur.com/Feb3jDR.gif' title='source: imgur.com' id='snowscreen'>";
+
+
+
 
 function snow_onClick(){
 
