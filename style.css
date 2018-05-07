@@ -163,8 +163,9 @@ body {
 #contact_email:hover { 
   font-family: 'Arvo', Helvetica, Arial, sans-serif;
   font-weight: bold;
-    color: #FF8300;
-    text-decoration: none;
+  color: #FF8300;
+  text-decoration: none;
+  text-shadow: -1px 0 #FF8300, 0 1px #FF8300, 1px 0 #FF8300, 0 -1px #FF8300;
 }
 
 #contact_phone {
