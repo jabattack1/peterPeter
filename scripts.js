@@ -14,7 +14,7 @@ var contact ="<a href=\"mailto:peter.hahn@live.com\" class='animated fadeIn' id=
 var content_tv ="<div id=\"content_tv\" class=\"content\"><script>$('#content_tv').append(tv);</script></div>";
 var tv ="<img src='https://i.imgur.com/Feb3jDR.gif' title='source: imgur.com' id='tv'>"; 
 var snowscreen ="<img src='https://i.imgur.com/Feb3jDR.gif' title='source: imgur.com' id='snowscreen'>";
-var bars ="<img src='https://i.imgur.com/Feb3jDR.gif' title='source: imgur.com' id='snowscreen'>";
+var bars ="<img src='https://i.imgur.com/cybwiK5.gif' title='source: imgur.com' id='barsTV'>";
 
 
 
@@ -61,8 +61,8 @@ function contact_onClick() {
 	$("body").children("#snowscreen").remove();
 	$('#content').empty();
 
-	// $('#content').append(contact);
-	$('#content').append(bars);
+	$('#content').append(contact);
+	$('body').append(bars);
 
   }
 
