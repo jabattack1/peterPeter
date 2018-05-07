@@ -14,7 +14,7 @@ var contact ="<a href=\"mailto:peter.hahn@live.com\" class='animated fadeIn' id=
 var content_tv ="<div id=\"content_tv\" class=\"content\"><script>$('#content_tv').append(tv);</script></div>";
 var tv ="<img src=./images/offairFast.GIF' id='tv'>"; 
 var snowscreen ="<img src='./images/offairFast.GIF' id='snowscreen'>";
-var bars ="<img src='./images/retroOffair.GIF id='barsTV'>";
+var bars ="<img src='./images/retroOffair.GIF' id='barsTV'>";
 
 
 
