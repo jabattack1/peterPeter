@@ -21,6 +21,7 @@ var bars ="<img src='https://i.imgur.com/cybwiK5.gif' title='source: imgur.com' 
 function snow_onClick(){
 
 	$("body").children("#snowscreen").remove();
+	$("body").children("#barsTV").remove();
 	$('#content').empty();
 	// $('body').remove(content);
 	// $('body').append(content_tv);
@@ -32,6 +33,7 @@ function about_onClick() {
 	console.log('about');
 
     $("body").children("#snowscreen").remove();
+    $("body").children("#barsTV").remove();
 	$('#content').empty();
 	// $('body').append(content);
 	$('#content').append(template);
@@ -49,6 +51,7 @@ function resume_onClick() {
 
 	// $('#content_tv').empty();
 	$("body").children("#snowscreen").remove();
+	$("body").children("#barsTV").remove();
 	$('#content').empty();
 	// $('body').append(content);
 	$('#content').append(resume);
@@ -59,6 +62,7 @@ function contact_onClick() {
 	console.log('contact');
 
 	$("body").children("#snowscreen").remove();
+	$("body").children("#barsTV").remove();
 	$('#content').empty();
 
 	$('#content').append(contact);
@@ -71,6 +75,7 @@ function project_onClick() {
 
 	// $('#content_tv').empty();
 	$("body").children("#snowscreen").remove();
+	$("body").children("#barsTV").remove();
 	$('#content').empty();
 	// $('body').append(content);
 	$('#content').append(projects);
