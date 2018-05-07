@@ -4,7 +4,7 @@ var content ="<div id=\"content\" class=\"content\"></div>";
 var say = "New introduction coming soon."
 var template = "<h3 class='animated fadeIn' id='name'>Peter Hahn</h3><h2 class='animated fadeIn' id='title'>Full Stack Developer (JavaScript, Ruby, HTML/CSS)</h2>";
 var exp = "<h2 class='animated fadeIn' id='exp'>"+say+"</h2>";
-var headshot = "<img src='./images/headshot.JPG' class='animated fadeIn' id='photo'>";
+var headshot = "<img src='https://i.imgur.com/OUfvYhR.jpg' title='source: imgur.com' class='animated fadeIn' id='photo'>";
 var pointer = "<p class='animated fadeIn' id=sites_link>Links:</p>"
 var sites ="<a href=https://github.com/jabattack1 target=\"_blank\" class='animated fadeIn' id='sites_github'>GitHub</a><a href=https://www.linkedin.com/in/petertaehahn target=\"_blank\" class='animated fadeIn' id='sites_rebel'>LinkedIn</a>";
 var resume = "<iframe src=\"https://docs.google.com/file/d/0B_QUho3Z8WoPck0xRjA5akRvYjA/preview\" class='animated fadeIn' id='resume_doc'></iframe>";
@@ -12,9 +12,9 @@ var projects ="<a href=http://www.implus.club target=\"_blank\" class='animated 
 var contact ="<a href=\"mailto:peter.hahn@live.com\" class='animated fadeIn' id='contact_email'>peter.hahn@live.com</a><p class='animated fadeIn' id='contact_phone'>551-689-3517</p>"
 
 var content_tv ="<div id=\"content_tv\" class=\"content\"><script>$('#content_tv').append(tv);</script></div>";
-var tv ="<img src=./images/offairFast.GIF' id='tv'>"; 
-var snowscreen ="<img src='./images/offairFast.GIF' id='snowscreen'>";
-var bars ="<img src='./images/retroOffair.GIF' id='barsTV'>";
+var tv ="<img src='https://i.imgur.com/Feb3jDR.gif' title='source: imgur.com' id='tv'>"; 
+var snowscreen ="<img src='https://i.imgur.com/Feb3jDR.gif' title='source: imgur.com' id='snowscreen'>";
+var bars ="<img src='https://i.imgur.com/cybwiK5.gif' title='source: imgur.com' id='barsTV'>";
 
 
 
