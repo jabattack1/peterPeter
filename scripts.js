@@ -62,8 +62,8 @@ function contact_onClick() {
 	$("body").children("#snowscreen").remove();
 	$('#content').empty();
 	// $('body').append(content);
+	// $('#content').append(contact);
 	$('#content').append(bars);
-	$('#content').append(contact);
 	console.log('bar');
    // alert('a_onClick');
   }
