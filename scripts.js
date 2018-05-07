@@ -13,7 +13,7 @@ var contact ="<a href=\"mailto:peter.hahn@live.com\" class='animated fadeIn' id=
 
 var content_tv ="<div id=\"content_tv\" class=\"content\"><script>$('#content_tv').append(tv);</script></div>";
 var tv ="<img src='http://i1301.photobucket.com/albums/ag119/jabattack1/offair%20fast_zpsa4xnexhu.gif' id='tv'>"; 
-var snowscreen ="<img src='http://i1301.photobucket.com/albums/ag119/jabattack1/offair%20fast_zpsa4xnexhu.gif' id='snowscreen'>";
+var snowscreen ="<img src='https://i.imgur.com/Feb3jDR.gifv' id='snowscreen'>";
 
 function snow_onClick(){
 
