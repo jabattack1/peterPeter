@@ -5,9 +5,10 @@ html {
 
 body {
   width:1260px;
-    height: 800px;
-    margin: 0 auto;
+  height: 600px;
+  margin: 0 auto;
   position:relative;
+  /*background-color:black;*/
 }
 
 
