@@ -45,7 +45,7 @@ body {
   margin-top: -457px;
   position:absolute;
   /*background-color: white;*/
-  width: 480px;
+  width: 400px;
   height: 336px;
   /*border-style: solid;*/
     /*background-color:rgba(0,0,0,0.0);*/
@@ -268,7 +268,7 @@ body {
   margin: 0 auto;
   /*position: absolute;*/
   font-size: 25px;
-  width:480px;
+  width:200px;
   text-align:center;
 }
 
