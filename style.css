@@ -211,10 +211,14 @@ body {
   font-weight: bold;
   color: black;
   text-decoration: none;
-  margin-left:5%;
-  margin-top:20%;
-  position: absolute;
-  font-size: 15px;
+  display: block;
+  /*margin: 0 auto;*/
+  margin-left:70px;
+  margin-top:50px;
+  /*position: absolute;*/
+  font-size: 25px;
+  width:200px;
+  text-align:center;
 }
 
 #sites_keys:hover { 
@@ -267,6 +271,7 @@ body {
   display: block;
   /*margin: 0 auto;*/
   margin-left:70px;
+  margin-top:20px;
   /*position: absolute;*/
   font-size: 25px;
   width:200px;
