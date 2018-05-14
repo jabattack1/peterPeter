@@ -451,8 +451,8 @@ body {
   margin-top:60px;
   /*position: absolute;*/
   font-size: 25px;
-  width:200px;
-  text-align:center;
+  width: 100%;
+  text-align: center;
 }
 
 #sites_jr:hover { 
