@@ -42,7 +42,7 @@ body {
   font-size: .8em;
   color: white;
   margin-left: 260px;
-  margin-top: -457px;
+  /*margin-top: -457px;*/
   position:absolute;
   /*background-color: white;*/
   width: 480px;
@@ -57,7 +57,7 @@ body {
   border-bottom-right-radius:10%;
   border-top-left-radius:10%;
   border-top-right-radius:10%;
-  z-index: 10;
+  z-index: 1;
     
 }
 
