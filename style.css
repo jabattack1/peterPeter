@@ -231,6 +231,28 @@ body {
   position: absolute;
 }
 
+#sites_rocket {
+  font-family: 'Arvo', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  display: block;
+  /*margin: 0 auto;*/
+  /*margin-left:70px;*/
+  margin-top:10px;
+  /*position: absolute;*/
+  font-size: 25px;
+  width: 100%;
+  text-align: center;
+}
+
+#sites_rocket:hover { 
+  font-family: 'Arvo', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: #FF8300;
+  text-decoration: none;
+}
+
 #sites_keys {
   font-family: 'Arvo', Helvetica, Arial, sans-serif;
   font-weight: bold;
@@ -247,6 +269,50 @@ body {
 }
 
 #sites_keys:hover { 
+  font-family: 'Arvo', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+    color: #FF8300;
+    text-decoration: none;
+}
+
+#sites_jr {
+  font-family: 'Arvo', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  display: block;
+  /*margin: 0 auto;*/
+  /*margin-left:70px;*/
+  margin-top:60px;
+  /*position: absolute;*/
+  font-size: 25px;
+  width: 100%;
+  text-align: center;
+}
+
+#sites_jr:hover { 
+  font-family: 'Arvo', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+    color: #FF8300;
+    text-decoration: none;
+}
+
+#sites_seafood {
+   font-family: 'Arvo', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  display: block;
+  /*margin: 0 auto;*/
+  /*margin-left:70px;*/
+  margin-top:80px;
+  /*position: absolute;*/
+  font-size: 25px;
+  width: 100%;
+  text-align: center;
+}
+
+#sites_seafood:hover { 
   font-family: 'Arvo', Helvetica, Arial, sans-serif;
   font-weight: bold;
     color: #FF8300;
@@ -288,27 +354,6 @@ body {
     text-decoration: none;
 }
 
-#sites_rocket {
-  font-family: 'Arvo', Helvetica, Arial, sans-serif;
-  font-weight: bold;
-  color: black;
-  text-decoration: none;
-  display: block;
-  /*margin: 0 auto;*/
-  /*margin-left:70px;*/
-  margin-top:10px;
-  /*position: absolute;*/
-  font-size: 25px;
-  width: 100%;
-  text-align: center;
-}
-
-#sites_rocket:hover { 
-  font-family: 'Arvo', Helvetica, Arial, sans-serif;
-  font-weight: bold;
-  color: #FF8300;
-  text-decoration: none;
-}
 
 #sites_im {
   font-family: 'Arvo', Helvetica, Arial, sans-serif;
@@ -328,27 +373,6 @@ body {
     text-decoration: none;
 }
 
-#sites_seafood {
-   font-family: 'Arvo', Helvetica, Arial, sans-serif;
-  font-weight: bold;
-  color: black;
-  text-decoration: none;
-  display: block;
-  /*margin: 0 auto;*/
-  /*margin-left:70px;*/
-  margin-top:80px;
-  /*position: absolute;*/
-  font-size: 25px;
-  width: 100%;
-  text-align: center;
-}
-
-#sites_seafood:hover { 
-  font-family: 'Arvo', Helvetica, Arial, sans-serif;
-  font-weight: bold;
-    color: #FF8300;
-    text-decoration: none;
-}
 
 #sites_charming {
   font-family: 'Arvo', Helvetica, Arial, sans-serif;
@@ -440,27 +464,6 @@ body {
     text-decoration: none;
 }
 
-#sites_jr {
-  font-family: 'Arvo', Helvetica, Arial, sans-serif;
-  font-weight: bold;
-  color: black;
-  text-decoration: none;
-  display: block;
-  /*margin: 0 auto;*/
-  /*margin-left:70px;*/
-  margin-top:60px;
-  /*position: absolute;*/
-  font-size: 25px;
-  width: 100%;
-  text-align: center;
-}
-
-#sites_jr:hover { 
-  font-family: 'Arvo', Helvetica, Arial, sans-serif;
-  font-weight: bold;
-    color: #FF8300;
-    text-decoration: none;
-}
 
 #snow{
   font-family: 'Arvo', Helvetica, Arial, sans-serif;
