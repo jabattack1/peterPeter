@@ -334,13 +334,13 @@ body {
   color: black;
   text-decoration: none;
   display: block;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   /*margin-left:70px;*/
   margin-top:80px;
   /*position: absolute;*/
   font-size: 25px;
-  width:200px;
-  text-align:center;
+  width: 100%;
+  text-align: center;
 }
 
 #sites_seafood:hover { 
