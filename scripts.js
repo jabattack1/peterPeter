@@ -2,7 +2,7 @@ console.log("MOTHA!");
 var content ="<div id=\"content\" class=\"content\"></div>";
 
 var say = "New introduction coming soon."
-var template = "<h3 class='animated fadeIn' id='name'>Peter Hahn</h3><h2 class='animated fadeIn' id='title'>Full Stack Developer (JavaScript, Ruby, HTML/CSS)</h2>";
+var template = "<h3 class='animated fadeIn' id='name'>Peter Hahn</h3><h2 class='animated fadeIn' id='title'>Full Stack Developer (JavaScript, React, Ruby, HTML/CSS)</h2>";
 var exp = "<h2 class='animated fadeIn' id='exp'>"+say+"</h2>";
 var headshot = "<img src='https://i.imgur.com/OUfvYhR.jpg' title='source: imgur.com' class='animated fadeIn' id='photo'>";
 var pointer = "<p class='animated fadeIn' id=sites_link>Links:</p>"
