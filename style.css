@@ -11,8 +11,9 @@ html {
 body {
     display: table-cell;
     vertical-align: middle;
-      width:1260px;
-  height: 600px;
+    width:1260px;
+    height: 600px;
+    /*background-color:green;*/
 }
 
 
@@ -30,7 +31,7 @@ body {
   height: 518px;
   width: 750px;
   margin-left: 190px;
-  margin-top: 50px;
+  margin-top: 0px;
   position: static;
 }
 
@@ -407,7 +408,7 @@ body {
   font-weight: bold;
   color: black;
   text-decoration: none;
-  margin-left: 980px;
+  margin-left: 960px;
   margin-top: 40px;
   position: absolute;
 }
@@ -418,7 +419,7 @@ body {
   font-weight: bold;
   color: black;
   text-decoration: none;
-  margin-left: 980px;
+  margin-left: 960px;
   margin-top: 120px;
   position: absolute;
 }
@@ -435,7 +436,7 @@ body {
   font-weight: bold;
   color: black;
   text-decoration: none;
-  margin-left: 980px;
+  margin-left: 960px;
   margin-top: 162px;
   position: absolute;
 }
@@ -452,7 +453,7 @@ body {
   font-weight: bold;
   color: black;
   text-decoration: none;
-  margin-left: 980px;
+  margin-left: 960px;
   margin-top: 204px;
   position: absolute;
 }
@@ -469,7 +470,7 @@ body {
   font-weight: bold;
   color: black;
   text-decoration: none;
-  margin-left: 980px;
+  margin-left: 960px;
   margin-top: 246px;
   position: absolute;
 }
@@ -486,7 +487,7 @@ body {
   font-weight: bold;
   color: black;
   text-decoration: none;
-  margin-left: 980px;
+  margin-left: 960px;
   margin-top: 288px;
   position: absolute;
 }
@@ -519,7 +520,7 @@ body {
   font-family: 'Arvo', Georgia, Times, serif;
   color: #FFFFFF;
   margin-left: 170px;
-  margin-top: 530px;
+  margin-top: 520px;
   position: absolute;
   
   height: 20px; 
