@@ -30,9 +30,8 @@ body {
   /*background-position: center;*/
   height: 518px;
   width: 750px;
-  margin-left: 190px;
-  margin-top: 0px;
-  position: static;
+  margin: auto;
+  /*background-color:black;*/
 }
 
 
@@ -73,7 +72,7 @@ body {
   font-family: 'Arvo', Georgia, Times, serif;
   font-size: .8em;
   color: white;
-  margin-left: 260px;
+  margin-left: 327px;
   margin-top: -457px;
   position:absolute;
   /*background-color: white;*/
@@ -163,7 +162,7 @@ body {
 #snowscreen {
   width: 500px;
   height: 367px;
-  margin-left: 240px;
+  margin-left: 310px;
   margin-top: -475px;
   /*position: absolute;*/
   overflow-x: none;
@@ -174,7 +173,7 @@ body {
 #barsTV {
   width: 500px;
   height: 367px;
-  margin-left: 240px;
+  margin-left: 310px;
   margin-top: -475px;
   /*position: absolute;*/
   overflow-x: none;
@@ -408,8 +407,9 @@ body {
   font-weight: bold;
   color: black;
   text-decoration: none;
-  margin-left: 960px;
-  margin-top: 40px;
+  margin-left: 848px;
+  margin-top: 23px;
+  height:33px;
   position: absolute;
 }
 
@@ -417,10 +417,10 @@ body {
 #snow{
   font-family: 'Arvo', Helvetica, Arial, sans-serif;
   font-weight: bold;
-  color: black;
+  color: white;
   text-decoration: none;
-  margin-left: 960px;
-  margin-top: 143px;
+  margin-left: 879px;
+  margin-top: 65px;
   position: absolute;
 }
 
@@ -434,10 +434,10 @@ body {
 #about {
   font-family: 'Arvo', Helvetica, Arial, sans-serif;
   font-weight: bold;
-  color: black;
+  color: white;
   text-decoration: none;
-  margin-left: 960px;
-  margin-top: 185px;
+  margin-left: 879px;
+  margin-top: 95px;
   position: absolute;
 }
 
@@ -451,10 +451,10 @@ body {
 #resume {
   font-family: 'Arvo', Helvetica, Arial, sans-serif;
   font-weight: bold;
-  color: black;
+  color: white;
   text-decoration: none;
-  margin-left: 960px;
-  margin-top: 227px;
+  margin-left: 879px;
+  margin-top: 125px;
   position: absolute;
 }
 
@@ -468,10 +468,10 @@ body {
 #project {
   font-family: 'Arvo', Helvetica, Arial, sans-serif;
   font-weight: bold;
-  color: black;
+  color: white;
   text-decoration: none;
-  margin-left: 960px;
-  margin-top: 269px;
+  margin-left: 879px;
+  margin-top: 155px;
   position: absolute;
 }
 
@@ -485,10 +485,10 @@ body {
 #contact {
   font-family: 'Arvo', Helvetica, Arial, sans-serif;
   font-weight: bold;
-  color: black;
+  color: white;
   text-decoration: none;
-  margin-left: 960px;
-  margin-top: 311px;
+  margin-left: 879px;
+  margin-top: 185px;
   position: absolute;
 }
 
@@ -519,12 +519,13 @@ body {
 #rights {
   font-family: 'Arvo', Georgia, Times, serif;
   color: #FFFFFF;
-  margin-left: 170px;
-  margin-top: 520px;
-  position: absolute;
+  margin: auto;
+  /*margin-top: 0px;*/
+  /*position: absolute;*/
   
   height: 20px; 
-    width: 950px; 
+  width: 790px; 
+  /*background-color:black;*/
   /*border-style: solid;*/
     /*background-color:rgba(0,0,0,0.5);*/
     /*border-radius: 5px 5px 5px 5px;*/
@@ -541,7 +542,7 @@ body {
 #cred{
   font-family: 'Arvo', Georgia, Times, serif;
   color: black;
-  margin-left: 745px;
+  margin-left: 605px;
   margin-top: 2px;
   position: absolute;
 }
