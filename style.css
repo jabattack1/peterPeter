@@ -137,7 +137,7 @@ body {
 
 #title {
   margin-top: 23px;
-  margin-left:155px;
+  margin-left:160px;
   font-family: 'Arvo', Helvetica, Arial, sans-serif;
   font-size: 10px;
   position: absolute;
@@ -168,7 +168,7 @@ body {
   width: 500px;
   height: 367px;
   margin-left: 0px;
-  margin-top: -15px;
+  margin-top: -10px;
   position: absolute;
   overflow-x: none;
   overflow-y: none;
@@ -179,7 +179,7 @@ body {
   width: 500px;
   height: 367px;
   margin-left: 0px;
-  margin-top: -15px;
+  margin-top: -10px;
   /*position: absolute;*/
   overflow-x: none;
   overflow-y: none;
