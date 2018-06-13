@@ -1,15 +1,30 @@
 console.log("MOTHA!");
+
+$( document ).ready(function() {
+  $('#content').append(snowscreen);
+  $('#content').append(bars);
+  $('#content').append(template);
+  $('#content').append(resumePage);
+  $('#content').append(projects);
+  $('#content').append(contact);
+  $('#snowscreen').hide()
+  $("#barsTV").hide();
+  $('#myInfo').hide();
+  $('#resume').hide();
+  $('#projectContainer').hide();
+  $('#contactContainer').hide();
+
+  $('#snowscreen').show();
+
+});
+
 var content ="<div id=\"content\" class=\"content\"></div>";
 
 var say = "New introduction coming soon."
-var template = "<h3 class='animated fadeIn' id='name'>Peter Hahn</h3><h2 class='animated fadeIn' id='title'>Full Stack Developer (JavaScript, React, Ruby, HTML/CSS)</h2>";
-var exp = "<h2 class='animated fadeIn' id='exp'>"+say+"</h2>";
-var headshot = "<img src='https://i.imgur.com/OUfvYhR.jpg' title='source: imgur.com' class='animated fadeIn' id='photo'>";
-var pointer = "<p class='animated fadeIn' id=sites_link>Links:</p>"
-var sites ="<a href=https://github.com/jabattack1 target=\"_blank\" class='animated fadeIn' id='sites_github'>GitHub</a><a href=https://www.linkedin.com/in/petertaehahn target=\"_blank\" class='animated fadeIn' id='sites_rebel'>LinkedIn</a>";
-var resume = "<iframe src=\"https://docs.google.com/file/d/0B_QUho3Z8WoPck0xRjA5akRvYjA/preview\" class='animated fadeIn' id='resume_doc'></iframe>";
+var template = "<div id='myInfo'><h3 class='animated fadeIn' id='name'>Peter Hahn</h3><h2 class='animated fadeIn' id='title'>Full Stack Developer (JavaScript, React, Ruby, HTML/CSS)</h2><img src='https://i.imgur.com/OUfvYhR.jpg' title='source: imgur.com' class='animated fadeIn' id='photo'><h2 class='animated fadeIn' id='exp'>"+say+"</h2><p class='animated fadeIn' id=sites_link>Links:</p><a href=https://github.com/jabattack1 target=\"_blank\" class='animated fadeIn' id='sites_github'>GitHub</a><a href=https://www.linkedin.com/in/petertaehahn target=\"_blank\" class='animated fadeIn' id='sites_linkedin'>LinkedIn</a></div>";
+var resumePage = "<div id='resume'><iframe src=\"https://docs.google.com/file/d/0B_QUho3Z8WoPck0xRjA5akRvYjA/preview\" class='animated fadeIn' id='resume_doc'></iframe></div>";
 var projects ="<div id='projectContainer'><a href=http://www.retrospacerocket.fun target=\"_blank\" class='animated fadeIn' id='sites_rocket'>www.retrospacerocket.fun</a><a href=http://www.pianokeys.press target=\"_blank\" class='animated fadeIn' id='sites_keys'>www.pianokeys.press</a><a href=http://www.calculatorjr.fun target=\"_blank\" class='animated fadeIn' id='sites_jr'>www.calculatorjr.fun</a><a href=http://www.seafoodbay.net/ target=\"_blank\" class='animated fadeIn' id='sites_seafood'>www.seafoodbay.net</a><a href=http://www.borocleaners.site target=\"_blank\" class='animated fadeIn' id='sites_boro'>www.borocleaners.site</a></div>"; 
-var contact ="<a href=\"mailto:peter.hahn@live.com\" class='animated fadeIn' id='contact_email'>peter.hahn@live.com</a><p class='animated fadeIn' id='contact_phone'>551-689-3517</p>"
+var contact ="<div id='contactContainer'><a href=\"mailto:peter.hahn@live.com\" class='animated fadeIn' id='contact_email'>peter.hahn@live.com</a><p class='animated fadeIn' id='contact_phone'>551-689-3517</p></div>"
 
 var content_tv ="<div id=\"content_tv\" class=\"content\"><script>$('#content_tv').append(tv);</script></div>";
 var tv ="<img src='https://i.imgur.com/Feb3jDR.gif' title='source: imgur.com' id='tv'>"; 
@@ -20,66 +35,50 @@ var bars ="<img src='https://i.imgur.com/cybwiK5.gif' title='source: imgur.com' 
 
 function snow_onClick(){
 
-	$("body").children("#snowscreen").remove();
-	$("body").children("#barsTV").remove();
-	$('#content').empty();
-	// $('body').remove(content);
-	// $('body').append(content_tv);
-	// $('#content').empty();
-	$('body').append(snowscreen);
+	$("#snowscreen").hide();
+	$("#barsTV").hide();
+	$("#myInfo").hide();
+	$("#resume").hide();
+	$('#projectContainer').hide();
+	$('#contactContainer').hide();
+	$("#snowscreen").show();
 }
 
 function about_onClick() {
-	console.log('about');
-
-    $("body").children("#snowscreen").remove();
-    $("body").children("#barsTV").remove();
-	$('#content').empty();
-	// $('body').append(content);
-	$('#content').append(template);
-	$('#content').append(headshot);
-	$('#content').append(pointer);
-	$('#content').append(sites);
-	$('#content').append(exp);
-
-	// e.preventDefault();
-	// return false;
+    $("#snowscreen").hide();
+    $("#barsTV").hide();
+    $("#resume").hide();
+    $('#projectContainer').hide();
+    $('#contactContainer').hide();
+    $("#myInfo").show();
   }
 
 function resume_onClick() {
-	console.log('resume');
-
-	// $('#content_tv').empty();
-	$("body").children("#snowscreen").remove();
-	$("body").children("#barsTV").remove();
-	$('#content').empty();
-	// $('body').append(content);
-	$('#content').append(resume);
-   // alert('a_onClick');
-  }
-
-function contact_onClick() {
-	console.log('contact');
-
-	$("body").children("#snowscreen").remove();
-	$("body").children("#barsTV").remove();
-	$('#content').empty();
-
-	$('#content').append(contact);
-	$('body').append(bars);
-
+	$("#snowscreen").hide();
+	$("#barsTV").hide();
+	$("#myInfo").hide();
+	$('#projectContainer').hide();
+	$('#contactContainer').hide();
+	$("#resume").show();
   }
 
 function project_onClick() {
-	console.log('project');
+	$("#snowscreen").hide();
+	$("#barsTV").hide();
+	$("#myInfo").hide();
+	$("#resume").hide();
+	$('#contactContainer').hide();
+	$('#projectContainer').show();
+  }
 
-	// $('#content_tv').empty();
-	$("body").children("#snowscreen").remove();
-	$("body").children("#barsTV").remove();
-	$('#content').empty();
-	// $('body').append(content);
-	$('#content').append(projects);
-   // alert('a_onClick');
+
+function contact_onClick() {
+	$("#snowscreen").hide();
+	$("#myInfo").hide();
+	$("#resume").hide();
+	$('#projectContainer').hide();
+	$("#barsTV").show();
+	$('#contactContainer').show();
   }
 
 
