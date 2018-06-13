@@ -440,21 +440,28 @@ body {
   font-weight: bold;
   color: black;
   text-decoration: none;
-  margin-left: 595px;
-  margin-top: -518px;
+  margin-left: -150px;
+  margin-top: -10px;
   height:33px;
   position: absolute;
   /*background-color: black;*/
 }
 
+#menu-bar {
+/*background-color:black;*/
+height:500px;
+position:absolute;
+margin-top:-507px;
+margin-left:745px;
+}
 
 #snow{
   font-family: 'Arvo', Helvetica, Arial, sans-serif;
   font-weight: bold;
   color: black;
   text-decoration: none;
-  margin-left: 745px;
-  margin-top: -507px;
+  margin-left: 0px;
+  margin-top: 0px;
   position: absolute;
   z-index:10;
 }
@@ -471,8 +478,8 @@ body {
   font-weight: bold;
   color: black;
   text-decoration: none;
-  margin-left: 745px;
-  margin-top: -477px;
+  margin-left: 0px;
+  margin-top: 30px;
   position: absolute;
 }
 
@@ -488,8 +495,8 @@ body {
   font-weight: bold;
   color: black;
   text-decoration: none;
-  margin-left: 745px;
-  margin-top: -447px;
+  margin-left: 0px;
+  margin-top: 60px;
   position: absolute;
 }
 
@@ -505,8 +512,8 @@ body {
   font-weight: bold;
   color: black;
   text-decoration: none;
-  margin-left: 745px;
-  margin-top: -417px;
+  margin-left: 0px;
+  margin-top: 90px;
   position: absolute;
 }
 
@@ -522,8 +529,8 @@ body {
   font-weight: bold;
   color: black;
   text-decoration: none;
-  margin-left: 745px;
-  margin-top: -387px;
+  margin-left: 0px;
+  margin-top: 120px;
   position: absolute;
 }
 
@@ -601,29 +608,6 @@ body {
   z-index: 0;
 }*/
 
-/*#menu-bar {
-  width: 50%;
-  margin: 0px 0px 0px 0px;
-  padding: 6px 6px 4px 6px;
-  height: 20px;
-  line-height: 100%;
-  border-radius: 0px;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  box-shadow: 2px 2px 3px #666666;
-  -webkit-box-shadow: 2px 2px 3px #666666;
-  -moz-box-shadow: 2px 2px 3px #666666;
-  background: #8B8B8B;
-  background: linear-gradient(top,  #A9A9A9,  #7A7A7A);
-  background: -ms-linear-gradient(top,  #A9A9A9,  #7A7A7A);
-  background: -webkit-gradient(linear, left top, left bottom, from(#A9A9A9), to(#7A7A7A));
-  background: -moz-linear-gradient(top,  #A9A9A9,  #7A7A7A);
-  border: solid 1px #6D6D6D;
-  position:absolute;
-  z-index:999;
-  margin-left:23.5%;
-  margin-top:3.5%;
-}*/
 /*#menu-bar li {
   margin: 0px 0px 6px 0px;
   padding: 0px 6px 0px 6px;

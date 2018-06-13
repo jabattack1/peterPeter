@@ -1,6 +1,9 @@
 console.log("MOTHA!");
 
 $( document ).ready(function() {
+
+
+	$('#menu-bar').show("slide", { direction: "left" }, 1000);	
   $('#content').append(snowscreen);
   $('#content').append(bars);
   $('#content').append(template);
