@@ -5,25 +5,14 @@
   <title>Peter Hahn</title>
   <script src="jquery.js"></script>
   <script src="scripts.js"></script>
+  <script src="jquery-ui.js"></script>
   <link rel="stylesheet" media="all" href="style.css" />
+  <link rel="stylesheet" media="all" href="jquery-ui.css" />
   <link rel="stylesheet" media="all" href="animate.css" />
   <meta charset="UTF-8">
   <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
 
  </head>
-
-<link href="//fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
-<link href="//fonts.googleapis.com/css?family=Cabin" rel="stylesheet" type="text/css">
-<link href="//fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet" type="text/css">
-<link href="//fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet" type="text/css">
-<link href="//fonts.googleapis.com/css?family=Allan:bold" rel="stylesheet" type="text/css">
-<link href="//fonts.googleapis.com/css?family=Cardo" rel="stylesheet" type="text/css">
-<link href="//fonts.googleapis.com/css?family=Lekton" rel="stylesheet" type="text/css">
-<link href="//fonts.googleapis.com/css?family=Molengo" rel="stylesheet" type="text/css">
-<link href="//fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css">
-<link href="//fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
-<link href="//fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css">
-<link href="//fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet" type="text/css">
 
 <link rel="shortcut icon" href="https://i.imgur.com/XA8Ofka.png">
 
@@ -39,11 +28,15 @@
 <div id='box'>
 <div id="content_container" class="content">
 </div>
-
-<div id='menu-bar' class="list">
 <image id='nameHahn' src='https://i.imgur.com/b6juY8m.png'/>
-<a href="/" id="snow" class='animated bounceIn' onClick="snow_onClick();return false;">Snow</a><a href="/" id="about" class='animated bounceIn' onClick="about_onClick();return false;">About</a><a href="/" id="resumeLink" class='animated bounceIn' onClick="resume_onClick();return false;">Résumé</a><a href="/" id="contact" class='animated bounceIn' onClick="contact_onClick();return false;">Contact</a>
-<a href="/" id="project" class='animated bounceIn' onClick="project_onClick();return false;">Projects</a>
+<div id='menuSlide'>
+<div id='menuSlideContent'>
+<a href="/" id="snow" onClick="snow_onClick();return false;">Snow</a>
+<a href="/" id="about" onClick="about_onClick();return false;">About</a>
+<a href="/" id="resumeLink" onClick="resume_onClick();return false;">Résumé</a>
+<a href="/" id="contact" onClick="contact_onClick();return false;">Contact</a>
+<a href="/" id="project" onClick="project_onClick();return false;">Projects</a>
+</div>
 </div>
 <div id="content" class="content">
   <script>

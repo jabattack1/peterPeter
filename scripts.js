@@ -1,23 +1,20 @@
 console.log("MOTHA!");
 
 $( document ).ready(function() {
+	$('#content').append(template);
+	$('#content').append(snowscreen);
+	$('#content').append(bars);
+ 	$('#content').append(resumePage);
+ 	$('#content').append(projects);
+  	$('#content').append(contact);
+  	$('#snowscreen').hide()
+  	$("#barsTV").hide();
+  	$('#myInfo').hide();
+	$('#resume').hide();
+  	$('#projectContainer').hide();
+  	$('#contactContainer').hide();
 
-
-	$('#menu-bar').show("slide", { direction: "left" }, 1000);	
-  $('#content').append(snowscreen);
-  $('#content').append(bars);
-  $('#content').append(template);
-  $('#content').append(resumePage);
-  $('#content').append(projects);
-  $('#content').append(contact);
-  $('#snowscreen').hide()
-  $("#barsTV").hide();
-  $('#myInfo').hide();
-  $('#resume').hide();
-  $('#projectContainer').hide();
-  $('#contactContainer').hide();
-
-  $('#snowscreen').show();
+  	$('#snowscreen').show();
 
 });
 
