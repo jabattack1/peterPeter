@@ -28,7 +28,7 @@ body {
 
 
 #content_container {
-  content:url(https://i.imgur.com/wM9EhC2.png);
+  content:url(https://i.imgur.com/W3JBjsP.png);
   /*background-position: center;*/
   height: 518px;
   width: 750px;
@@ -166,6 +166,83 @@ body {
 }
 
 #snowscreen {
+  width: 500px;
+  height: 367px;
+  margin-left: 0px;
+  margin-top: -10px;
+  position: absolute;
+  overflow-x: none;
+  overflow-y: none;
+  z-index: -1; position:absolute
+}
+
+#octopus {
+  width: 500px;
+  height: 367px;
+  margin-left: 0px;
+  margin-top: -10px;
+  position: absolute;
+  overflow-x: none;
+  overflow-y: none;
+  z-index: -1; position:absolute
+}
+
+#road {
+  width: 500px;
+  height: 367px;
+  margin-left: 0px;
+  margin-top: -10px;
+  position: absolute;
+  overflow-x: none;
+  overflow-y: none;
+  z-index: -1; position:absolute
+}
+
+#shy {
+  width: 500px;
+  height: 367px;
+  margin-left: 0px;
+  margin-top: -10px;
+  position: absolute;
+  overflow-x: none;
+  overflow-y: none;
+  z-index: -1; position:absolute
+}
+
+#crazy {
+  width: 500px;
+  height: 367px;
+  margin-left: 0px;
+  margin-top: -10px;
+  position: absolute;
+  overflow-x: none;
+  overflow-y: none;
+  z-index: -1; position:absolute
+}
+
+#space {
+  width: 500px;
+  height: 367px;
+  margin-left: 0px;
+  margin-top: -10px;
+  position: absolute;
+  overflow-x: none;
+  overflow-y: none;
+  z-index: -1; position:absolute
+}
+
+#ball {
+  width: 500px;
+  height: 367px;
+  margin-left: 0px;
+  margin-top: -10px;
+  position: absolute;
+  overflow-x: none;
+  overflow-y: none;
+  z-index: -1; position:absolute
+}
+
+#burger {
   width: 500px;
   height: 367px;
   margin-left: 0px;
@@ -451,12 +528,12 @@ body {
 
 #menuSlide{
   position:absolute;
-  width:100px;
+  width:20px;
   /*background-color: red;*/
-  height:150px;
+  height:140px;
   z-index:10;
-  margin-top:-505px;
-  margin-left:750px;
+  margin-top:-262px;
+  margin-left:608px;
   z-index:100;
 }
 
@@ -478,15 +555,25 @@ body {
   text-decoration: none;
   margin-left: 0px;
   margin-top: 0px;
+  width:18px;
+  height:18px;
   position: absolute;
   z-index:10;
+  background: url('https://i.imgur.com/xVQ0Byb.png') no-repeat;
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -khtml-border-radius: 8px;;
+  -o-border-radius:8px;
+  outline:none;
 }
 
 #snow:hover { 
   font-family: 'Arvo', Helvetica, Arial, sans-serif;
   font-weight: bold;
-    color: #686868;
-    text-decoration: none;
+  color: #686868;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 #about {
@@ -496,14 +583,25 @@ body {
   text-decoration: none;
   margin-left: 0px;
   margin-top: 30px;
+  width:18px;
+  height:18px;
   position: absolute;
+  z-index:10;
+  background: url('https://i.imgur.com/xVQ0Byb.png') no-repeat;
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -khtml-border-radius: 8px;;
+  -o-border-radius:8px;
+  outline:none;
 }
 
 #about:hover { 
   font-family: 'Arvo', Helvetica, Arial, sans-serif;
   font-weight: bold;
-    color: #686868;
-    text-decoration: none;
+  color: #686868;
+  text-decoration: none;
+  cursor:pointer;
 }
 
 #resumeLink {
@@ -512,15 +610,26 @@ body {
   color: black;
   text-decoration: none;
   margin-left: 0px;
-  margin-top: 60px;
+  margin-top: 90px;
+  width:18px;
+  height:18px;
   position: absolute;
+  z-index:10;
+  background: url('https://i.imgur.com/xVQ0Byb.png') no-repeat;
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -khtml-border-radius: 8px;;
+  -o-border-radius:8px;
+  outline:none;
 }
 
 #resumeLink:hover { 
   font-family: 'Arvo', Helvetica, Arial, sans-serif;
   font-weight: bold;
-    color: #686868;
-    text-decoration: none;
+  color: #686868;
+  text-decoration: none;
+  cursor:pointer;
 }
 
 #project {
@@ -529,15 +638,26 @@ body {
   color: black;
   text-decoration: none;
   margin-left: 0px;
-  margin-top: 90px;
+  margin-top: 60px;
+  width:18px;
+  height:18px;
   position: absolute;
+  z-index:10;
+  background: url('https://i.imgur.com/xVQ0Byb.png') no-repeat;
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -khtml-border-radius: 8px;;
+  -o-border-radius:8px;
+  outline:none;
 }
 
 #project:hover { 
   font-family: 'Arvo', Helvetica, Arial, sans-serif;
   font-weight: bold;
-    color: #686868;
-    text-decoration: none;
+  color: #686868;
+  text-decoration: none;
+  cursor:pointer;
 }
 
 #contact {
@@ -547,14 +667,25 @@ body {
   text-decoration: none;
   margin-left: 0px;
   margin-top: 120px;
+  width:18px;
+  height:18px;
   position: absolute;
+  z-index:10;
+  background: url('https://i.imgur.com/xVQ0Byb.png') no-repeat;
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -khtml-border-radius: 8px;;
+  -o-border-radius:8px;
+  outline:none;
 }
 
 #contact:hover { 
   font-family: 'Arvo', Helvetica, Arial, sans-serif;
   font-weight: bold;
-    color: #686868;
-    text-decoration: none;
+  color: #686868;
+  text-decoration: none;
+  cursor:pointer;
 }
 
 #photo {
@@ -604,6 +735,77 @@ body {
   margin-top: 2px;
   position: absolute;
 }
+
+#wheelContent{
+  position:absolute;
+  margin-top:-275px;
+  margin-left:670px;
+  width:20px;
+  height:160px;
+  /*background-color:red;*/
+}
+
+
+.draggable_wp {
+    position: absolute;
+    /*left: 937px;*/
+    top: 0px;
+}
+.el {
+    width: 10px;
+    height: 70px;
+    z-index:10;
+    background-color: #7C7367;
+}
+.handle {
+    position: absolute;
+    /*content:url(https://i.imgur.com/83IuJQe.png);*/
+    left:0;
+    top:75;
+    width: 10px;
+    height: 20px;
+    z-index:10;
+    background-color: #EFDDAA;
+}
+
+
+.draggable_wp2 {
+    position: absolute;
+    /*left: 937px;*/
+    top: 89px;
+}
+.el2 {
+    width: 10px;
+    height: 70px;
+    z-index:10;
+    background-color: #7C7367;
+}
+.handle2 {
+    position: absolute;
+    /*content:url(https://i.imgur.com/83IuJQe.png);*/
+    left:0;
+    top:75;
+    width: 10px;
+    height: 20px;
+    z-index:10;
+    background-color: #EFDDAA;
+}
+
+#firstWheel {
+  position:absolute;
+  width:72px;
+  margin-left:-29px;
+  margin-top:-3px;
+}
+
+#secondWheel {
+  position:absolute;
+  width:72px;
+  margin-left:-29px;
+  margin-top:87px;
+}
+
+
 /*#bg-right {
   background-color: black;
   position: fixed;

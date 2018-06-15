@@ -1,5 +1,7 @@
 console.log("MOTHA!");
 
+var clicked = 1;
+
 $( document ).ready(function() {
 	$('#content').append(template);
 	$('#content').append(snowscreen);
@@ -7,8 +9,22 @@ $( document ).ready(function() {
  	$('#content').append(resumePage);
  	$('#content').append(projects);
   	$('#content').append(contact);
+  	$('#content').append(octopus);
+  	$('#content').append(road);
+  	$('#content').append(shy);
+  	$('#content').append(crazy);
+  	$('#content').append(space);
+  	$('#content').append(ball);
+  	$('#content').append(burger);
   	$('#snowscreen').hide()
   	$("#barsTV").hide();
+  	$('#octopus').hide()
+  	$('#road').hide();
+  	$('#shy').hide();
+  	$('#crazy').hide();
+  	$('#space').hide();
+  	$('#ball').hide();
+  	$('#burger').hide();
   	$('#myInfo').hide();
 	$('#resume').hide();
   	$('#projectContainer').hide();
@@ -30,21 +46,42 @@ var content_tv ="<div id=\"content_tv\" class=\"content\"><script>$('#content_tv
 var tv ="<img src='https://i.imgur.com/Feb3jDR.gif' title='source: imgur.com' id='tv'>"; 
 var snowscreen ="<img src='https://i.imgur.com/Feb3jDR.gif' title='source: imgur.com' id='snowscreen'>";
 var bars ="<img src='https://i.imgur.com/cybwiK5.gif' title='source: imgur.com' id='barsTV'>";
-
-
+var octopus ="<img src='https://i.imgur.com/Q2usshj.gif' title='source: imgur.com' id='octopus'>";
+var road ="<img src='https://i.imgur.com/KjQaPg3.gif' title='source: imgur.com' id='road'>";
+var shy ="<img src='https://i.imgur.com/SOFOoxu.gif' title='source: imgur.com' id='shy'>";
+var crazy ="<img src='https://i.imgur.com/KgTEBZ5.gif' title='source: imgur.com' id='crazy'>";
+var space ="<img src='https://i.imgur.com/ITdheo5.gif' title='source: imgur.com' id='space'>";
+var ball ="<img src='https://i.imgur.com/tb6DPmG.gif' title='source: imgur.com' id='ball'>";
+var burger ="<img src='https://i.imgur.com/7sUJIdA.gif' title='source: imgur.com' id='burger'>";
 
 function snow_onClick(){
-
+	clicked = 1;
+	console.log(clicked);
 	$("#snowscreen").hide();
 	$("#barsTV").hide();
 	$("#myInfo").hide();
 	$("#resume").hide();
 	$('#projectContainer').hide();
 	$('#contactContainer').hide();
+	$("#road").hide();
+    $('#octopus').hide();
+    $('#shy').hide();
+    $('#crazy').hide();
+    $('#space').hide();
+    $('#ball').hide();
+    $('#burger').hide();
 	$("#snowscreen").show();
 }
 
 function about_onClick() {
+	clicked = 0;
+	$("#road").hide();
+    $('#octopus').hide();
+    $('#shy').hide();
+    $('#crazy').hide();
+    $('#space').hide();
+    $('#ball').hide();
+    $('#burger').hide();
     $("#snowscreen").hide();
     $("#barsTV").hide();
     $("#resume").hide();
@@ -54,6 +91,14 @@ function about_onClick() {
   }
 
 function resume_onClick() {
+	clicked = 0;
+	$("#road").hide();
+    $('#octopus').hide();
+    $('#shy').hide();
+    $('#crazy').hide();
+    $('#space').hide();
+    $('#ball').hide();
+    $('#burger').hide();
 	$("#snowscreen").hide();
 	$("#barsTV").hide();
 	$("#myInfo").hide();
@@ -63,6 +108,14 @@ function resume_onClick() {
   }
 
 function project_onClick() {
+	clicked = 0;
+	$("#road").hide();
+    $('#octopus').hide();
+    $('#shy').hide();
+    $('#crazy').hide();
+    $('#space').hide();
+    $('#ball').hide();
+    $('#burger').hide();
 	$("#snowscreen").hide();
 	$("#barsTV").hide();
 	$("#myInfo").hide();
@@ -73,6 +126,14 @@ function project_onClick() {
 
 
 function contact_onClick() {
+	clicked = 0;
+	$("#road").hide();
+    $('#octopus').hide();
+    $('#shy').hide();
+    $('#crazy').hide();
+    $('#space').hide();
+    $('#ball').hide();
+    $('#burger').hide();
 	$("#snowscreen").hide();
 	$("#myInfo").hide();
 	$("#resume").hide();
@@ -80,6 +141,244 @@ function contact_onClick() {
 	$("#barsTV").show();
 	$('#contactContainer').show();
   }
+
+
+ $(function () {
+    var dragging = false,
+        target_wp,
+        o_x, o_y, h_x, h_y, last_angle;
+    $('.handle').mousedown(function (e) {
+        h_x = e.pageX;
+        h_y = e.pageY; // clicked point
+        e.preventDefault();
+        e.stopPropagation();
+        dragging = true;
+        target_wp = $(e.target).closest('.draggable_wp');
+        if (!target_wp.data("origin")) target_wp.data("origin", {
+            left: target_wp.offset().left,
+            top: target_wp.offset().top
+        });
+        o_x = target_wp.data("origin").left;
+        o_y = target_wp.data("origin").top; // origin point
+        
+        last_angle = target_wp.data("last_angle") || 0;
+    })
+
+    $(document).mousemove(function (e) {
+        if (dragging) {
+            var s_x = e.pageX,
+                s_y = e.pageY; // start rotate point
+            if (s_x !== o_x && s_y !== o_y) { //start rotate
+                var s_rad = Math.atan2(s_y - o_y, s_x - o_x); // current to origin
+                s_rad -= Math.atan2(h_y - o_y, h_x - o_x); // handle to origin
+                s_rad += last_angle; // relative to the last one
+                var degree = (s_rad * (360 / (2 * Math.PI)));
+                target_wp.css('-moz-transform', 'rotate(' + degree + 'deg)');
+                target_wp.css('-moz-transform-origin', '50% 50%');
+                target_wp.css('-webkit-transform', 'rotate(' + degree + 'deg)');
+                target_wp.css('-webkit-transform-origin', '50% 50%');
+                target_wp.css('-o-transform', 'rotate(' + degree + 'deg)');
+                target_wp.css('-o-transform-origin', '50% 50%');
+                target_wp.css('-ms-transform', 'rotate(' + degree + 'deg)');
+                target_wp.css('-ms-transform-origin', '50% 50%');
+                
+                if(degree > -1 && degree < 45 && clicked === 1){
+              		$("#road").hide();
+                	$('#octopus').hide();
+                	$('#shy').hide();
+                	$('#crazy').hide();
+                	$('#space').hide();
+                	$('#ball').hide();
+                	$('#burger').hide();
+                	$('#snowscreen').show();
+                }
+                else if(degree > 44 && degree < 90 && clicked === 1){
+                	console.log('45');
+                	$("#snowscreen").hide();
+                	$("#road").hide();
+                	$('#shy').hide();
+                	$('#crazy').hide();
+                	$('#space').hide();
+                	$('#ball').hide();
+                	$('#burger').hide();
+                	$('#octopus').show();
+                }
+                else if(degree > 89 && degree < 135 && clicked === 1){
+                	console.log('90');
+                	$("#snowscreen").hide();
+                	$('#octopus').hide();
+                	$('#shy').hide();
+                	$('#crazy').hide();
+                	$('#space').hide();
+                	$('#ball').hide();
+                	$('#burger').hide();
+                	$('#road').show();
+                }
+                else if(degree > -221 && degree < -180 && clicked === 1){
+                	console.log('135');
+                	$("#snowscreen").hide();
+                	$('#octopus').hide();
+                	$('#road').hide();
+                	$('#crazy').hide();
+                	$('#space').hide();
+                	$('#ball').hide();
+                	$('#burger').hide();
+                	$('#shy').show();
+                }
+                else if(degree > 134 && degree < 180 && clicked === 1){
+                	console.log('135');
+                	$("#snowscreen").hide();
+                	$('#octopus').hide();
+                	$('#road').hide();
+                	$('#space').hide();
+                	$('#ball').hide();
+                	$('#burger').hide();
+                	$('#shy').show();                
+                }
+                else if(degree > -179 && degree < -135 && clicked === 1){
+                	console.log('180');
+                	$("#snowscreen").hide();
+                	$('#octopus').hide();
+                	$('#road').hide();
+                	$('#shy').hide();
+                	$('#space').hide();
+                	$('#ball').hide();
+                	$('#burger').hide();
+                	$('#crazy').show();
+                }
+                else if(degree > -134 && degree < -90 && clicked === 1){
+                	console.log('225');
+                	$("#snowscreen").hide();
+                	$('#octopus').hide();
+                	$('#road').hide();
+                	$('#shy').hide();
+                	$('#crazy').hide();
+                	$('#ball').hide();
+                	$('#burger').hide();
+                	$('#space').show();
+                }
+                else if(degree > -89 && degree < -45 && clicked === 1){
+                	console.log('270');
+                	$("#snowscreen").hide();
+                	$('#octopus').hide();
+                	$('#road').hide();
+                	$('#shy').hide();
+                	$('#crazy').hide();
+                	$('#space').hide();
+                	$('#burger').hide();
+                	$('#ball').show();
+                }
+                else if(degree > -44 && degree < 0 && clicked === 1){
+                	console.log('315');
+                	$("#snowscreen").hide();
+                	$('#octopus').hide();
+                	$('#road').hide();
+                	$('#shy').hide();
+                	$('#crazy').hide();
+                	$('#space').hide();
+                	$('#ball').hide();
+                	$('#burger').show();
+                }
+            }
+        }
+    }) // end mousemove
+    
+    $(document).mouseup(function (e) {
+        dragging = false
+        var s_x = e.pageX,
+            s_y = e.pageY;
+        
+        // Saves the last angle for future iterations
+        var s_rad = Math.atan2(s_y - o_y, s_x - o_x); // current to origin
+        s_rad -= Math.atan2(h_y - o_y, h_x - o_x); // handle to origin
+        s_rad += last_angle;
+        target_wp.data("last_angle", s_rad);
+    })
+})
+
+
+ $(function () {
+    var dragging = false,
+        target_wp,
+        o_x, o_y, h_x, h_y, last_angle;
+    $('.handle2').mousedown(function (e) {
+        h_x = e.pageX;
+        h_y = e.pageY; // clicked point
+        e.preventDefault();
+        e.stopPropagation();
+        dragging = true;
+        target_wp = $(e.target).closest('.draggable_wp2');
+        if (!target_wp.data("origin")) target_wp.data("origin", {
+            left: target_wp.offset().left,
+            top: target_wp.offset().top
+        });
+        o_x = target_wp.data("origin").left;
+        o_y = target_wp.data("origin").top; // origin point
+        
+        last_angle = target_wp.data("last_angle") || 0;
+    })
+
+    $(document).mousemove(function (e) {
+        if (dragging) {
+            var s_x = e.pageX,
+                s_y = e.pageY; // start rotate point
+            if (s_x !== o_x && s_y !== o_y) { //start rotate
+                var s_rad = Math.atan2(s_y - o_y, s_x - o_x); // current to origin
+                s_rad -= Math.atan2(h_y - o_y, h_x - o_x); // handle2 to origin
+                s_rad += last_angle; // relative to the last one
+                var degree = (s_rad * (360 / (2 * Math.PI)));
+                target_wp.css('-moz-transform', 'rotate(' + degree + 'deg)');
+                target_wp.css('-moz-transform-origin', '50% 50%');
+                target_wp.css('-webkit-transform', 'rotate(' + degree + 'deg)');
+                target_wp.css('-webkit-transform-origin', '50% 50%');
+                target_wp.css('-o-transform', 'rotate(' + degree + 'deg)');
+                target_wp.css('-o-transform-origin', '50% 50%');
+                target_wp.css('-ms-transform', 'rotate(' + degree + 'deg)');
+                target_wp.css('-ms-transform-origin', '50% 50%');
+                console.log(degree);
+                if(degree > -1 && degree < 45){
+                	console.log('0');
+                }
+                else if(degree > 44 && degree < 90){
+                	console.log('45');
+                }
+                else if(degree > 89 && degree < 135){
+                	console.log('90');
+                }
+                else if(degree > -221 && degree < -180){
+                	console.log('135');
+                }
+                else if(degree > 134 && degree < 180){
+                	console.log('135');
+                }
+                else if(degree > -179 && degree < -135){
+                	console.log('180');
+                }
+                else if(degree > -134 && degree < -90){
+                	console.log('225');
+                }
+                else if(degree > -89 && degree < -45){
+                	console.log('270');
+                }
+                else if(degree > -44 && degree < 0){
+                	console.log('315');
+                }
+            }
+        }
+    }) // end mousemove
+    
+    $(document).mouseup(function (e) {
+        dragging = false
+        var s_x = e.pageX,
+            s_y = e.pageY;
+        
+        // Saves the last angle for future iterations
+        var s_rad = Math.atan2(s_y - o_y, s_x - o_x); // current to origin
+        s_rad -= Math.atan2(h_y - o_y, h_x - o_x); // handle2 to origin
+        s_rad += last_angle;
+        target_wp.data("last_angle", s_rad);
+    })
+})
 
 
 
