@@ -143,7 +143,7 @@ function contact_onClick() {
   }
 
 
- $(function () {
+$(function () {
     var dragging = false,
         target_wp,
         o_x, o_y, h_x, h_y, last_angle;
@@ -162,7 +162,7 @@ function contact_onClick() {
         o_y = target_wp.data("origin").top; // origin point
         
         last_angle = target_wp.data("last_angle") || 0;
-    })
+    });
 
     $(document).mousemove(function (e) {
         if (dragging) {
@@ -281,10 +281,10 @@ function contact_onClick() {
                 }
             }
         }
-    }) // end mousemove
+    }); // end mousemove
     
     $(document).mouseup(function (e) {
-        dragging = false
+        dragging = false;
         var s_x = e.pageX,
             s_y = e.pageY;
         
@@ -293,11 +293,12 @@ function contact_onClick() {
         s_rad -= Math.atan2(h_y - o_y, h_x - o_x); // handle to origin
         s_rad += last_angle;
         target_wp.data("last_angle", s_rad);
-    })
-})
+    });
+});
 
 
- $(function () {
+
+$(function () {
     var dragging = false,
         target_wp,
         o_x, o_y, h_x, h_y, last_angle;
@@ -316,7 +317,7 @@ function contact_onClick() {
         o_y = target_wp.data("origin").top; // origin point
         
         last_angle = target_wp.data("last_angle") || 0;
-    })
+    });
 
     $(document).mousemove(function (e) {
         if (dragging) {
@@ -365,10 +366,10 @@ function contact_onClick() {
                 }
             }
         }
-    }) // end mousemove
+    }); // end mousemove
     
     $(document).mouseup(function (e) {
-        dragging = false
+        dragging = false;
         var s_x = e.pageX,
             s_y = e.pageY;
         
@@ -377,8 +378,8 @@ function contact_onClick() {
         s_rad -= Math.atan2(h_y - o_y, h_x - o_x); // handle2 to origin
         s_rad += last_angle;
         target_wp.data("last_angle", s_rad);
-    })
-})
+    });
+});
 
 
 
