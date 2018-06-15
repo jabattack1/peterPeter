@@ -142,6 +142,9 @@ function contact_onClick() {
 	$('#contactContainer').show();
   }
 
+$(".draggable_wp").click(function(){
+    console.log('i wanna know');
+});
 
 $(function () {
     var dragging = false,
@@ -284,100 +287,106 @@ $(function () {
     }); // end mousemove
     
     $(document).mouseup(function (e) {
-        dragging = false;
-        var s_x = e.pageX,
-            s_y = e.pageY;
+    	if (dragging) {
+    		console.log('up');
+        	dragging = false;
+        	var s_x = e.pageX,
+            	s_y = e.pageY;
         
-        // Saves the last angle for future iterations
-        var s_rad = Math.atan2(s_y - o_y, s_x - o_x); // current to origin
-        s_rad -= Math.atan2(h_y - o_y, h_x - o_x); // handle to origin
-        s_rad += last_angle;
-        target_wp.data("last_angle", s_rad);
+        	// Saves the last angle for future iterations
+        	var s_rad = Math.atan2(s_y - o_y, s_x - o_x); // current to origin
+        	s_rad -= Math.atan2(h_y - o_y, h_x - o_x); // handle to origin
+        	s_rad += last_angle;
+        	target_wp.data("last_angle", s_rad);
+    	}
     });
 });
 
 
 
 $(function () {
-    var dragging = false,
-        target_wp,
-        o_x, o_y, h_x, h_y, last_angle;
-    $('.handle2').mousedown(function (e) {
-        h_x = e.pageX;
-        h_y = e.pageY; // clicked point
-        e.preventDefault();
-        e.stopPropagation();
-        dragging = true;
-        target_wp = $(e.target).closest('.draggable_wp2');
-        if (!target_wp.data("origin")) target_wp.data("origin", {
-            left: target_wp.offset().left,
-            top: target_wp.offset().top
+    var dragging2 = false,
+        target_wp2,
+        o_x2, o_y2, h_x2, h_y2, last_angle2;
+    $('.handle2').mousedown(function (e2) {
+        h_x2 = e2.pageX;
+        h_y2 = e2.pageY; // clicked point
+        e2.preventDefault();
+        e2.stopPropagation();
+        dragging2 = true;
+        target_wp2 = $(e2.target).closest('.draggable_wp2');
+        if (!target_wp2.data("origin2")) target_wp2.data("origin2", {
+            left: target_wp2.offset().left,
+            top: target_wp2.offset().top
         });
-        o_x = target_wp.data("origin").left;
-        o_y = target_wp.data("origin").top; // origin point
+        o_x2 = target_wp2.data("origin2").left;
+        o_y2 = target_wp2.data("origin2").top; // origin2 point
         
-        last_angle = target_wp.data("last_angle") || 0;
+        last_angle2 = target_wp2.data("last_angle2") || 0;
     });
 
-    $(document).mousemove(function (e) {
-        if (dragging) {
-            var s_x = e.pageX,
-                s_y = e.pageY; // start rotate point
-            if (s_x !== o_x && s_y !== o_y) { //start rotate
-                var s_rad = Math.atan2(s_y - o_y, s_x - o_x); // current to origin
-                s_rad -= Math.atan2(h_y - o_y, h_x - o_x); // handle2 to origin
-                s_rad += last_angle; // relative to the last one
-                var degree = (s_rad * (360 / (2 * Math.PI)));
-                target_wp.css('-moz-transform', 'rotate(' + degree + 'deg)');
-                target_wp.css('-moz-transform-origin', '50% 50%');
-                target_wp.css('-webkit-transform', 'rotate(' + degree + 'deg)');
-                target_wp.css('-webkit-transform-origin', '50% 50%');
-                target_wp.css('-o-transform', 'rotate(' + degree + 'deg)');
-                target_wp.css('-o-transform-origin', '50% 50%');
-                target_wp.css('-ms-transform', 'rotate(' + degree + 'deg)');
-                target_wp.css('-ms-transform-origin', '50% 50%');
-                console.log(degree);
-                if(degree > -1 && degree < 45){
+    $(document).mousemove(function (e2) {
+        if (dragging2) {
+            var s_x2 = e2.pageX,
+                s_y2 = e2.pageY; // start rotate point
+            if (s_x2 !== o_x2 && s_y2 !== o_y2) { //start rotate
+                var s_rad2 = Math.atan2(s_y2 - o_y2, s_x2 - o_x2); // current to origin2
+                s_rad2 -= Math.atan2(h_y2 - o_y2, h_x2 - o_x2); // handle2 to origin2
+                s_rad2 += last_angle2; // relative to the last one
+                var degree2 = (s_rad2 * (360 / (2 * Math.PI)));
+                target_wp2.css('-moz-transform', 'rotate(' + degree2 + 'deg)');
+                target_wp2.css('-moz-transform-origin2', '50% 50%');
+                target_wp2.css('-webkit-transform', 'rotate(' + degree2 + 'deg)');
+                target_wp2.css('-webkit-transform-origin2', '50% 50%');
+                target_wp2.css('-o-transform', 'rotate(' + degree2 + 'deg)');
+                target_wp2.css('-o-transform-origin2', '50% 50%');
+                target_wp2.css('-ms-transform', 'rotate(' + degree2 + 'deg)');
+                target_wp2.css('-ms-transform-origin2', '50% 50%');
+                console.log(degree2);
+                if(degree2 > -1 && degree2 < 45){
                 	console.log('0');
                 }
-                else if(degree > 44 && degree < 90){
+                else if(degree2 > 44 && degree2 < 90){
                 	console.log('45');
                 }
-                else if(degree > 89 && degree < 135){
+                else if(degree2 > 89 && degree2 < 135){
                 	console.log('90');
                 }
-                else if(degree > -221 && degree < -180){
+                else if(degree2 > -221 && degree2 < -180){
                 	console.log('135');
                 }
-                else if(degree > 134 && degree < 180){
+                else if(degree2 > 134 && degree2 < 180){
                 	console.log('135');
                 }
-                else if(degree > -179 && degree < -135){
+                else if(degree2 > -179 && degree2 < -135){
                 	console.log('180');
                 }
-                else if(degree > -134 && degree < -90){
+                else if(degree2 > -134 && degree2 < -90){
                 	console.log('225');
                 }
-                else if(degree > -89 && degree < -45){
+                else if(degree2 > -89 && degree2 < -45){
                 	console.log('270');
                 }
-                else if(degree > -44 && degree < 0){
+                else if(degree2 > -44 && degree2 < 0){
                 	console.log('315');
                 }
             }
         }
     }); // end mousemove
     
-    $(document).mouseup(function (e) {
-        dragging = false;
-        var s_x = e.pageX,
-            s_y = e.pageY;
+    $(document).mouseup(function (e2) {
+    	if (dragging2) {
+    		console.log('up2');
+        	dragging2 = false;
+        	var s_x2 = e2.pageX,
+           		s_y2 = e2.pageY;
         
-        // Saves the last angle for future iterations
-        var s_rad = Math.atan2(s_y - o_y, s_x - o_x); // current to origin
-        s_rad -= Math.atan2(h_y - o_y, h_x - o_x); // handle2 to origin
-        s_rad += last_angle;
-        target_wp.data("last_angle", s_rad);
+        	// Saves the last angle for future iterations
+        	var s_rad2 = Math.atan2(s_y2 - o_y2, s_x2 - o_x2); // current to origin2
+        	s_rad2 -= Math.atan2(h_y2 - o_y2, h_x2 - o_x2); // handle2 to origin2
+        	s_rad2 += last_angle2;
+        	target_wp2.data("last_angle2", s_rad2);
+    	}
     });
 });
 
