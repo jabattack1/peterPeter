@@ -343,32 +343,41 @@ $(function () {
                 target_wp2.css('-ms-transform', 'rotate(' + degree2 + 'deg)');
                 target_wp2.css('-ms-transform-origin2', '50% 50%');
                 console.log(degree2);
-                if(degree2 > -1 && degree2 < 45){
+                if(degree2 > -1 && degree2 < 45 && clicked === 1){
                 	console.log('0');
+                	$('#bg').css('background-color', 'rgba(0, 0, 0, 0.2)');
                 }
-                else if(degree2 > 44 && degree2 < 90){
+                else if(degree2 > 44 && degree2 < 90 && clicked === 1){
                 	console.log('45');
+                	$('#bg').css('background-color', 'rgba(0, 0, 0, 0.4)');
                 }
-                else if(degree2 > 89 && degree2 < 135){
+                else if(degree2 > 89 && degree2 < 135 && clicked === 1){
                 	console.log('90');
+                	$('#bg').css('background-color', 'rgba(0, 0, 0, 0.5)');
                 }
-                else if(degree2 > -221 && degree2 < -180){
+                else if(degree2 > -221 && degree2 < -180 && clicked === 1){
                 	console.log('135');
+                	$('#bg').css('background-color', 'rgba(0, 0, 0, 0.6)');
                 }
-                else if(degree2 > 134 && degree2 < 180){
+                else if(degree2 > 134 && degree2 < 180 && clicked === 1){
                 	console.log('135');
+                	$('#bg').css('background-color', 'rgba(0, 0, 0, 0.6)');
                 }
-                else if(degree2 > -179 && degree2 < -135){
+                else if(degree2 > -179 && degree2 < -135 && clicked === 1){
                 	console.log('180');
+                	$('#bg').css('background-color', 'rgba(0, 0, 0, 0.7)');
                 }
-                else if(degree2 > -134 && degree2 < -90){
+                else if(degree2 > -134 && degree2 < -90 && clicked === 1){
                 	console.log('225');
+                	$('#bg').css('background-color', 'rgba(0, 0, 0, 0.8)');
                 }
-                else if(degree2 > -89 && degree2 < -45){
+                else if(degree2 > -89 && degree2 < -45 && clicked === 1){
                 	console.log('270');
+                	$('#bg').css('background-color', 'rgba(0, 0, 0, 0.9)');
                 }
-                else if(degree2 > -44 && degree2 < 0){
+                else if(degree2 > -44 && degree2 < 0 && clicked === 1){
                 	console.log('315');
+                	$('#bg').css('background-color', 'rgba(0, 0, 0, 1)');
                 }
             }
         }
