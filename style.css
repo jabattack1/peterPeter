@@ -348,6 +348,10 @@ body {
   position: absolute;
 }
 
+#tell{
+  font-size:15px;
+}
+
 #sites_rocket {
   font-family: 'Arvo', Helvetica, Arial, sans-serif;
   font-weight: bold;
