@@ -28,7 +28,7 @@ body {
   font-family: 'verdana';
   position:absolute;
   right:205px;
-  top:195px;
+  top:220px;
   font-weight:bold;
   font-size:20px;
 }
@@ -36,8 +36,8 @@ body {
 #channels{
   font-family: 'verdana';
   position:absolute;
-  right:185px;
-  top:270px;
+  right:140px;
+  top:280px;
   font-weight:bold;
   font-size:20px;
 }
@@ -45,8 +45,8 @@ body {
 #biography{
   font-family: 'verdana';
   position:absolute;
-  right:145px;
-  top:320px;
+  right:115px;
+  top:315px;
   font-weight:bold;
   font-size:20px;
 }
@@ -72,8 +72,8 @@ body {
 #resumeChannel{
   font-family: 'verdana';
   position:absolute;
-  right:185px;
-  top:410px;
+  right:95px;
+  top:420px;
   font-weight:bold;
   font-size:20px;
 }
@@ -81,48 +81,55 @@ body {
 #contactChannel{
   font-family: 'verdana';
   position:absolute;
-  right:175px;
-  top:465px;
+  right:120px;
+  top:450px;
   font-weight:bold;
   font-size:20px;
 }
 
 #pointer1{
   position:absolute;
+  height:80px;
+  width:200px;
   right:215px;
-  top:210px;
+  top:240px;
 }
 
 #pointer2{
   position:absolute;
+  height:25px;
   right:230px;
   top:300px;
 }
 
 #pointer3{
   position:absolute;
+  height:25px;
   right:230px;
-  top:390px;
+  top:400px;
 }
 
 #pointer4{
   position:absolute;
   right:200px;
   top:375px;
+  height:22px;
   width:200px;
 }
 
 #pointer5{
   position:absolute;
-  right:190px;
-  top:420px;
+  height:85px;
+  right:185px;
+  top:422px;
   width:230px;
 }
 
 #pointer6{
   position:absolute;
-  right:180px;
-  top:320px;
+  height:45px;
+  right:175px;
+  top:330px;
   width:230px;
 }
 
