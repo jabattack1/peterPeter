@@ -28,83 +28,83 @@ body {
   font-family: 'verdana';
   position:absolute;
   right:205px;
-  top:220px;
-  font-weight:bold;
+  top:230px;
+  /*font-weight:bold;*/
   font-size:20px;
 }
 
 #channels{
   font-family: 'verdana';
   position:absolute;
-  right:140px;
-  top:280px;
-  font-weight:bold;
+  right:145px;
+  top:275px;
+  /*font-weight:bold;*/
   font-size:20px;
 }
 
 #biography{
   font-family: 'verdana';
   position:absolute;
-  right:115px;
-  top:315px;
-  font-weight:bold;
+  right:87px;
+  top:320px;
+  /*font-weight:bold;*/
   font-size:20px;
 }
 
 #portfolio{
   font-family: 'verdana';
   position:absolute;
-  right:105px;
-  top:350px;
-  font-weight:bold;
+  right:115px;
+  top:342px;
+  /*font-weight:bold;*/
   font-size:20px;
 }
 
 #tint{
   font-family: 'verdana';
   position:absolute;
-  right:185px;
-  top:380px;
-  font-weight:bold;
+  right:190px;
+  top:375px;
+  /*font-weight:bold;*/
   font-size:20px;
 }
 
 #resumeChannel{
   font-family: 'verdana';
   position:absolute;
-  right:95px;
-  top:420px;
-  font-weight:bold;
+  right:100px;
+  top:415px;
+  /*font-weight:bold;*/
   font-size:20px;
 }
 
 #contactChannel{
   font-family: 'verdana';
   position:absolute;
-  right:120px;
-  top:450px;
-  font-weight:bold;
+  right:127px;
+  top:440px;
+  /*font-weight:bold;*/
   font-size:20px;
 }
 
 #pointer1{
   position:absolute;
-  height:80px;
+  height:50px;
   width:200px;
   right:215px;
-  top:240px;
+  top:255px;
 }
 
 #pointer2{
   position:absolute;
-  height:25px;
+  height:20px;
   right:230px;
   top:300px;
 }
 
 #pointer3{
   position:absolute;
-  height:25px;
+  height:20px;
   right:230px;
   top:400px;
 }
@@ -112,31 +112,32 @@ body {
 #pointer4{
   position:absolute;
   right:200px;
-  top:375px;
-  height:22px;
+  top:368px;
+  height:15px;
   width:200px;
 }
 
 #pointer5{
   position:absolute;
-  height:85px;
+  height:65px;
   right:185px;
-  top:422px;
+  top:432px;
   width:230px;
 }
 
 #pointer6{
   position:absolute;
-  height:45px;
+  height:35px;
   right:175px;
-  top:330px;
+  top:335px;
   width:230px;
 }
 
 #pointer7{
   position:absolute;
-  right:180px;
-  top:380px;
+  height:55px;
+  right:175px;
+  top:405px;
   width:230px;
 }
 
