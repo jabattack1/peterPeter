@@ -16,7 +16,122 @@ body {
     /*background-color:green;*/
 }
 
+#sayYeah{
+  word-wrap:break-word;
+  color:black;
+  font-size:10px;
+  width:400px;
+  margin-left:50px;
+}
 
+#TVbutton{
+  font-family: 'verdana';
+  position:absolute;
+  right:205px;
+  top:195px;
+  font-weight:bold;
+  font-size:20px;
+}
+
+#channels{
+  font-family: 'verdana';
+  position:absolute;
+  right:185px;
+  top:270px;
+  font-weight:bold;
+  font-size:20px;
+}
+
+#biography{
+  font-family: 'verdana';
+  position:absolute;
+  right:145px;
+  top:320px;
+  font-weight:bold;
+  font-size:20px;
+}
+
+#portfolio{
+  font-family: 'verdana';
+  position:absolute;
+  right:105px;
+  top:350px;
+  font-weight:bold;
+  font-size:20px;
+}
+
+#tint{
+  font-family: 'verdana';
+  position:absolute;
+  right:185px;
+  top:380px;
+  font-weight:bold;
+  font-size:20px;
+}
+
+#resumeChannel{
+  font-family: 'verdana';
+  position:absolute;
+  right:185px;
+  top:410px;
+  font-weight:bold;
+  font-size:20px;
+}
+
+#contactChannel{
+  font-family: 'verdana';
+  position:absolute;
+  right:175px;
+  top:465px;
+  font-weight:bold;
+  font-size:20px;
+}
+
+#pointer1{
+  position:absolute;
+  right:215px;
+  top:210px;
+}
+
+#pointer2{
+  position:absolute;
+  right:230px;
+  top:300px;
+}
+
+#pointer3{
+  position:absolute;
+  right:230px;
+  top:390px;
+}
+
+#pointer4{
+  position:absolute;
+  right:200px;
+  top:375px;
+  width:200px;
+}
+
+#pointer5{
+  position:absolute;
+  right:190px;
+  top:420px;
+  width:230px;
+}
+
+#pointer6{
+  position:absolute;
+  right:180px;
+  top:320px;
+  width:230px;
+}
+
+#pointer7{
+  position:absolute;
+  right:180px;
+  top:380px;
+  width:230px;
+}
 
 
 #box {
@@ -33,6 +148,10 @@ body {
   height: 518px;
   width: 750px;
   margin: auto;
+        border-bottom-left-radius:10%;
+    border-bottom-right-radius:10%;
+    border-top-left-radius:10%;
+    border-top-right-radius:10%;
   /*background-color:black;*/
 }
 
@@ -46,7 +165,7 @@ body {
 
 #projectContainer {
   /*opacity: 0.4;*/
-  font-family: 'Arvo', Georgia, Times, serif;
+  font-family: 'verdana';
   font-size: .8em;
   color: white;
   margin-left: 10px;
@@ -71,7 +190,7 @@ body {
 
 #content {
   /*opacity: 0.4;*/
-  font-family: 'Arvo', Georgia, Times, serif;
+  font-family: 'verdana';
   font-size: .8em;
   color: white;
   margin-left: 60px;
@@ -97,7 +216,7 @@ body {
 
 #content_tv {
   /*opacity: 0.4;*/
-  font-family: 'Arvo', Georgia, Times, serif;
+  font-family: 'verdana';
   font-size: .8em;
   color: white;
   margin-left: 0px;
@@ -119,35 +238,36 @@ body {
     
 }
 
+
 #heading {
   margin-left: 15%;
   margin-top: 2%;
   position: absolute;
-  font-family: 'Arvo', Georgia, Times, serif;
+  font-family: 'verdana';
   color: black;
 }
 
 #name {
   margin-top: 10px;
   margin-left:205px;
-  font-family: 'Arvo', Helvetica, Arial, sans-serif;
+  font-family: 'verdana';
   font-size: 25px;
-  position: absolute;
+  /*position: absolute;*/
   color: black;
 }
 
 #title {
-  margin-top: 43px;
+  margin-top: -20px;
   margin-left:205px;
-  font-family: 'Arvo', Helvetica, Arial, sans-serif;
-  font-size: 9px;
-  position: absolute;
+  font-family: 'verdana';
+  font-size: 7px;
+  /*position: absolute;*/
   color: black;
 }
 #exp {
   margin-top: 10px;
   margin-left:15px;
-  font-family: 'Arvo', Helvetica, Arial, sans-serif;
+  font-family: 'verdana';
   font-size: 12px;
   position: absolute;
   color: black;
@@ -277,7 +397,7 @@ body {
   margin-top:140px;
   text-align: center;
   font-size: 15px;
-  font-family: 'Arvo', Helvetica, Arial, sans-serif;
+  font-family: 'verdana';
   font-weight: bold;
   /*background-color:black;*/
   /*position: absolute;*/
@@ -286,7 +406,7 @@ body {
 }
 
 #contact_email:hover { 
-  font-family: 'Arvo', Helvetica, Arial, sans-serif;
+  font-family: 'verdana';
   font-weight: bold;
   color: #686868;
   text-decoration: none;
@@ -297,7 +417,7 @@ body {
   margin-top: 20px;
   text-align: center;
   font-size: 15px;
-  font-family: 'Arvo', Helvetica, Arial, sans-serif;
+  font-family: 'verdana';
   font-weight: bold;
   /*position: absolute;*/
   color: black;
@@ -305,7 +425,7 @@ body {
 }
 
 #sites_github {
-  font-family: 'Arvo', Helvetica, Arial, sans-serif;
+  font-family: 'verdana';
   font-weight: bold;
   color: black;
   text-decoration: none;
@@ -315,14 +435,14 @@ body {
 }
 
 #sites_github:hover { 
-  font-family: 'Arvo', Helvetica, Arial, sans-serif;
+  font-family: 'verdana';
   font-weight: bold;
     color: #686868;
     text-decoration: none;
 }
 
 #sites_linkedin {
-  font-family: 'Arvo', Helvetica, Arial, sans-serif;
+  font-family: 'verdana';
   font-weight: bold;
   color: black;
   text-decoration: none;
@@ -332,14 +452,14 @@ body {
 }
 
 #sites_linkedin:hover { 
-  font-family: 'Arvo', Helvetica, Arial, sans-serif;
+  font-family: 'verdana';
   font-weight: bold;
     color: #686868;
     text-decoration: none;
 }
 
 #sites_link {
-  font-family: 'Arvo', Helvetica, Arial, sans-serif;
+  font-family: 'verdana';
   font-weight: bold;
   color: black;
   text-decoration: underline;
@@ -352,8 +472,30 @@ body {
   font-size:10px;
 }
 
+#sites_hotel{
+  font-family: 'verdana';
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  display: block;
+  /*margin: 0 auto;*/
+  /*margin-left:70px;*/
+  margin-top:20px;
+  /*position: absolute;*/
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+#sites_hotel:hover { 
+  font-family: 'verdana';
+  font-weight: bold;
+  color: #686868;
+  text-decoration: none;
+}
+
 #sites_rocket {
-  font-family: 'Arvo', Helvetica, Arial, sans-serif;
+  font-family: 'verdana';
   font-weight: bold;
   color: black;
   text-decoration: none;
@@ -368,14 +510,14 @@ body {
 }
 
 #sites_rocket:hover { 
-  font-family: 'Arvo', Helvetica, Arial, sans-serif;
+  font-family: 'verdana';
   font-weight: bold;
   color: #686868;
   text-decoration: none;
 }
 
 #sites_keys {
-  font-family: 'Arvo', Helvetica, Arial, sans-serif;
+  font-family: 'verdana';
   font-weight: bold;
   color: black;
   text-decoration: none;
@@ -390,14 +532,14 @@ body {
 }
 
 #sites_keys:hover { 
-  font-family: 'Arvo', Helvetica, Arial, sans-serif;
+  font-family: 'verdana';
   font-weight: bold;
     color: #686868;
     text-decoration: none;
 }
 
 #sites_jr {
-  font-family: 'Arvo', Helvetica, Arial, sans-serif;
+  font-family: 'verdana';
   font-weight: bold;
   color: black;
   text-decoration: none;
@@ -413,14 +555,14 @@ body {
 }
 
 #sites_jr:hover { 
-  font-family: 'Arvo', Helvetica, Arial, sans-serif;
+  font-family: 'verdana';
   font-weight: bold;
     color: #686868;
     text-decoration: none;
 }
 
 #sites_seafood {
-   font-family: 'Arvo', Helvetica, Arial, sans-serif;
+   font-family: 'verdana';
   font-weight: bold;
   color: black;
   text-decoration: none;
@@ -435,7 +577,7 @@ body {
 }
 
 #sites_seafood:hover { 
-  font-family: 'Arvo', Helvetica, Arial, sans-serif;
+  font-family: 'verdana';
   font-weight: bold;
     color: #686868;
     text-decoration: none;
@@ -443,7 +585,7 @@ body {
 
 
 #sites_boro {
-  font-family: 'Arvo', Helvetica, Arial, sans-serif;
+  font-family: 'verdana';
   font-weight: bold;
   color: black;
   text-decoration: none;
@@ -458,7 +600,7 @@ body {
 }
 
 #sites_boro:hover { 
-  font-family: 'Arvo', Helvetica, Arial, sans-serif;
+  font-family: 'verdana';
   font-weight: bold;
     color: #686868;
     text-decoration: none;
@@ -467,7 +609,7 @@ body {
 
 
 #nameHahn{
-  font-family: 'Arvo', Helvetica, Arial, sans-serif;
+  font-family: 'verdana';
   font-weight: bold;
   color: black;
   text-decoration: none;
@@ -501,7 +643,7 @@ body {
 
 
 #snow{
-  font-family: 'Arvo', Helvetica, Arial, sans-serif;
+  font-family: 'verdana';
   font-weight: bold;
   color: black;
   text-decoration: none;
@@ -521,7 +663,7 @@ body {
 }
 
 #snow:hover { 
-  font-family: 'Arvo', Helvetica, Arial, sans-serif;
+  font-family: 'verdana';
   font-weight: bold;
   color: #686868;
   text-decoration: none;
@@ -529,7 +671,7 @@ body {
 }
 
 #about {
-  font-family: 'Arvo', Helvetica, Arial, sans-serif;
+  font-family: 'verdana';
   font-weight: bold;
   color: black;
   text-decoration: none;
@@ -549,7 +691,7 @@ body {
 }
 
 #about:hover { 
-  font-family: 'Arvo', Helvetica, Arial, sans-serif;
+  font-family: 'verdana';
   font-weight: bold;
   color: #686868;
   text-decoration: none;
@@ -557,7 +699,7 @@ body {
 }
 
 #resumeLink {
-  font-family: 'Arvo', Helvetica, Arial, sans-serif;
+  font-family: 'verdana';
   font-weight: bold;
   color: black;
   text-decoration: none;
@@ -577,7 +719,7 @@ body {
 }
 
 #resumeLink:hover { 
-  font-family: 'Arvo', Helvetica, Arial, sans-serif;
+  font-family: 'verdana';
   font-weight: bold;
   color: #686868;
   text-decoration: none;
@@ -585,7 +727,7 @@ body {
 }
 
 #project {
-  font-family: 'Arvo', Helvetica, Arial, sans-serif;
+  font-family: 'verdana';
   font-weight: bold;
   color: black;
   text-decoration: none;
@@ -605,7 +747,7 @@ body {
 }
 
 #project:hover { 
-  font-family: 'Arvo', Helvetica, Arial, sans-serif;
+  font-family: 'verdana';
   font-weight: bold;
   color: #686868;
   text-decoration: none;
@@ -613,7 +755,7 @@ body {
 }
 
 #contact {
-  font-family: 'Arvo', Helvetica, Arial, sans-serif;
+  font-family: 'verdana';
   font-weight: bold;
   color: black;
   text-decoration: none;
@@ -633,7 +775,7 @@ body {
 }
 
 #contact:hover { 
-  font-family: 'Arvo', Helvetica, Arial, sans-serif;
+  font-family: 'verdana';
   font-weight: bold;
   color: #686868;
   text-decoration: none;
@@ -643,7 +785,7 @@ body {
 #photo {
   width: 185px;
   height: 200px;
-  margin-top: 15px;
+  margin-top: -42px;
   margin-left: 15px;
 }
 
@@ -658,7 +800,7 @@ body {
 
 
 #rights {
-  font-family: 'Arvo', Georgia, Times, serif;
+  font-family: 'verdana';
   color: #FFFFFF;
   margin: auto;
   /*margin-top: 0px;*/
@@ -673,7 +815,7 @@ body {
 }
 
 #copyright {
-  font-family: 'Arvo', Georgia, Times, serif;
+  font-family: 'verdana';
   color: black;
   margin-left: 0px;
   margin-top: 2px;
@@ -681,7 +823,7 @@ body {
 }
 
 #cred{
-  font-family: 'Arvo', Georgia, Times, serif;
+  font-family: 'verdana';
   color: black;
   margin-left: 605px;
   margin-top: 2px;
