@@ -17,13 +17,13 @@ body {
 }
 
 #introductionWrapper{
-  width:760px;
+  width:740px;
   text-align:center;
   /*background-color:red;*/
 }
 
 #introduction{
-  font-size:18px;
+  font-size:14px;
   text-align:center;
   font-family: 'verdana';
   font-weight:bold;
@@ -870,9 +870,10 @@ body {
   margin: auto;
   /*margin-top: 0px;*/
   /*position: absolute;*/
-  margin-top:50px;
+  margin-top:25px;
   height: 20px; 
   width: 790px; 
+  font-size:12px;
   /*background-color:black;*/
   /*border-style: solid;*/
     /*background-color:rgba(0,0,0,0.5);*/
@@ -882,7 +883,7 @@ body {
 #copyright {
   font-family: 'verdana';
   color: black;
-  margin-left: 0px;
+  margin-left: 25px;
   margin-top: 2px;
   position: absolute;
 }
@@ -890,7 +891,7 @@ body {
 #cred{
   font-family: 'verdana';
   color: black;
-  margin-left: 605px;
+  margin-left: 625px;
   margin-top: 2px;
   position: absolute;
 }
