@@ -519,6 +519,16 @@ body {
   text-decoration: none;
 }
 
+#disclaimer{
+  font-family: 'verdana';
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  margin-top:30px;
+}
+
 #sites_rocket {
   font-family: 'verdana';
   font-weight: bold;
