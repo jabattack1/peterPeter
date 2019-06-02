@@ -16,6 +16,23 @@ body {
     /*background-color:green;*/
 }
 
+#introductionWrapper{
+  width:760px;
+  text-align:center;
+  /*background-color:red;*/
+}
+
+#introduction{
+  font-size:18px;
+  text-align:center;
+  font-family: 'verdana';
+  font-weight:bold;
+}
+
+#littleWords{
+  font-size:10px;
+}
+
 #sayYeah{
   word-wrap:break-word;
   color:black;
@@ -813,7 +830,7 @@ body {
   margin: auto;
   /*margin-top: 0px;*/
   /*position: absolute;*/
-  
+  margin-top:50px;
   height: 20px; 
   width: 790px; 
   /*background-color:black;*/
