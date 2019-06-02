@@ -440,6 +440,7 @@ body {
   margin:0 auto;
   width: 300px;
   height:200px;
+  z-index:100;
   /*background-color:black;*/
 }
 
@@ -451,10 +452,11 @@ body {
   font-size: 15px;
   font-family: 'verdana';
   font-weight: bold;
+  text-decoration:none;
   /*background-color:black;*/
   /*position: absolute;*/
   color: black;
-  text-shadow: -.5px 0 white, 0 .5px white, .5px 0 white, 0 -.5px white;
+  /*text-shadow: -.5px 0 white, 0 .5px white, .5px 0 white, 0 -.5px white;*/
 }
 
 #contact_email:hover { 
@@ -473,7 +475,7 @@ body {
   font-weight: bold;
   /*position: absolute;*/
   color: black;
-  text-shadow: -.5px 0 white, 0 .5px white, .5px 0 white, 0 -.5px white;
+  /*text-shadow: -.5px 0 white, 0 .5px white, .5px 0 white, 0 -.5px white;*/
 }
 
 #sites_github {
@@ -534,7 +536,7 @@ body {
   /*margin-left:70px;*/
   margin-top:20px;
   /*position: absolute;*/
-  font-size: 20px;
+  font-size: 17px;
   width: 100%;
   text-align: center;
 }
@@ -567,7 +569,7 @@ body {
   /*margin-left:70px;*/
   margin-top:20px;
   /*position: absolute;*/
-  font-size: 20px;
+  font-size: 17px;
   width: 100%;
   text-align: center;
 }
@@ -589,7 +591,7 @@ body {
   /*margin-left:100px;*/
   margin-top:20px;
   /*position: absolute;*/
-  font-size: 20px;
+  font-size: 17px;
   width: 100%;
   text-align: center;
 }
@@ -611,7 +613,7 @@ body {
   /*margin-left:70px;*/
   margin-top:20px;
   /*position: absolute;*/
-  font-size: 20px;
+  font-size: 17px;
   width: 100%;
   text-align: center;
   /*background-color:black;*/
@@ -634,7 +636,7 @@ body {
   /*margin-left:70px;*/
   margin-top:20px;
   /*position: absolute;*/
-  font-size: 20px;
+  font-size: 17px;
   width: 100%;
   text-align: center;
 }
@@ -657,7 +659,7 @@ body {
   /*margin-left:70px;*/
   margin-top:20px;
   /*position: absolute;*/
-  font-size: 20px;
+  font-size: 17px;
   width: 100%;
   text-align: center;
 }
