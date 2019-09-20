@@ -581,6 +581,28 @@ body {
   text-decoration: none;
 }
 
+#sites_mock{
+  font-family: 'verdana';
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  display: block;
+  /*margin: 0 auto;*/
+  /*margin-left:70px;*/
+  margin-top:20px;
+  /*position: absolute;*/
+  font-size: 17px;
+  width: 100%;
+  text-align: center;
+}
+
+#sites_mock:hover { 
+  font-family: 'verdana';
+  font-weight: bold;
+  color: #686868;
+  text-decoration: none;
+}
+
 #sites_illuminator{
   font-family: 'verdana';
   font-weight: bold;
